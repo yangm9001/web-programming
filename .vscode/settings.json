@@ -1,0 +1,11 @@
+{
+  "github.copilot.editor.enableAutoCompletions": false,
+  "editor.inlineSuggest.enabled": false,
+  "chat.agent.enabled": false,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "off",
+  "files.exclude": {
+    "**/.github": true
+  }
+}
