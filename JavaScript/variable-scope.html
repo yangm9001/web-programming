@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Variable Scope</title>
+        <script>
+            function foo(){
+                // local variables are declare in the body of a function
+                const bar = 7;
+                console.log(y);
+            }
+
+            //console.log(bar); // this will crash because bar is a local variable
+
+
+            // global variables are declare outside of any functions
+            const y = 8;
+
+            foo();
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
