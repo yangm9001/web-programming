@@ -26,28 +26,28 @@
     What are the comparison operators used for?
 </p>
 <div class="answer">
-    Replace this text with your answer to the above problem.
+    To compare two values and return a boolean statement.
 </div>
 <h4>Question 2</h4>
 <p class="question">
     Explain the difference between the logical AND operator (<b>&&</b>) and the logical OR operator (<b>||</b>).
 </p>
 <div class="answer">
-    Replace this text with your answer to the above problem.
+    && is true only if both conditions are true and || is true if one condition is true.
 </div>
 <h4>Question 3</h4>
 <p class="question">
     Which operator would you use to find the remainder from dividing 2 numbers.
 </p>
 <div class="answer">
-    Replace this text with your answer to the above problem.
+    The remainder operator.
 </div>
 <h4>Question 4</h4>
 <p class="question">
     Which operator would you use if you wanted to find out if two values were NOT equal?
 </p>
 <div class="answer">
-    Replace this text with your answer to the above problem.
+    The not equal operator.
 </div>
 
 <h3>Coding Problems - See the 'script' tag below this h3 tag. You will have to write some JavaScript code in it.</h3>
@@ -63,12 +63,15 @@
 console.log("Problem 1");
 //Declare a variable named 'score' and assign it a value of 21.
 //Then use a short-cut arithmetic operator to add 7 to it.
-
+let score = 21;
+score += 7;
+console.log(score);
 
 //Problem 2
 console.log("Problem 2");
 //Use the decrement operator to reduce the value of 'score' variable by 1.
-
+score--;
+console.log(score);
 
 
 //Problem 3
@@ -77,21 +80,35 @@ console.log("Problem 3");
 //Then write an IF statement that checks to see if the value of the 'score' 
 //variable is greater than the value of the 'todaysHighScore' variable
 //If it's true then alert("You beat the high score for the day!")
+const todaysHighScore = 20;
 
+if(score > todaysHighScore){
+    alert("You beat the high score for the day!");
+}
 
 
 //Problem 4
 console.log("Problem 4");
 //Use your imagination to declare and initialize a few variables and 
 //then demonstrate the logical AND operator in an IF statement
+const hasTicket = true;
+const age = 16;
 
+if(hasTicket && age >= 13){
+    console.log("Enjoy the movie!");
+}
 
 
 //Problem 5
 console.log("Problem 5");
 //Use your imagination to declare and initialize a few variables 
 //and then demonstrate the logical OR operator in an IF statement
+const isWeekend = false;
+const isHoliday = true;
 
+if(isWeekend || isHoliday){
+    console.log("No work today!");
+}
 
 
 

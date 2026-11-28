@@ -26,42 +26,42 @@
 		  Why is an IF statement known as a <b>control structure</b>?
 		</p>
 		<div class="answer">
-		  Replace this text with answer/solution to the above problem
+		  It controls the flow of if a condition is true and skips if the condition is false.
 		</div> 
 		<h4>Question 2</h4>
 		<p class="question">
 		  There are other control structures in JavaScript that we'll be learning about soon. Use your google skills to look up the other control structures in JavaScript and list them below.
 		</p>
 		<div class="answer">
-		  Replace this text with answer/solution to the above problem
+		  Conditionals (if, else, switch) and loops (for, while, do...while).
 		</div>      
 		<h4>Question 3</h4>
 		<p class="question">
 		  What is a <b>boolean expression</b>?
 		</p>
 		<div class="answer">
-		  Replace this text with answer/solution to the above problem
+		  True or false statements.
 		</div>
 		<h4>Question 4</h4>
 		<p class="question">
 		  What is the 'equality operator', and what is it used for? How is it different from the assignment operator?
 		</p>
 		<div class="answer">
-		  Replace this text with answer/solution to the above problem
+		  'Equality operator' compares two values and returns true or false and use to check if whether two things are equal.
 		</div>
 		<h4>Question 5</h4>
 		<p class="question">
 		  Why is it important to properly indent your code when writing IF statements?
 		</p>
 		<div class="answer">
-		  Replace this text with answer/solution to the above problem
+		  It's easier to see the structure of the code and what belongs inside a statement.
 		</div>
 		<h4>Question 6</h4>
 		<p class="question">
 		  What is a code block in JavaScript?
 		</p>
 		<div class="answer">
-		  Replace this text with answer/solution to the above problem
+		  A group of statements enclosed in curly braces.
 		</div>
 		
 		<h1>Coding Problems</h1>
@@ -85,7 +85,15 @@ console.log("PROBLEM 1");
 // If this is true, then assign a value of true to the willPass variable.
 // If this is not true, then assign a value of false to willPass.
 // Then log the value of willPass.
+const averageGrade = 71.2;
+let willPass;
 
+if(averageGrade > 70){
+    willPass = true;
+}else{
+    willPass = false;
+}
+console.log(willPass);
  
 
 //Problem 2
@@ -97,7 +105,11 @@ console.log("PROBLEM 2");
 // (Remember that all user input in JavaScript default to being a string).
 // Write an IF statement that checks to see if userInput is greater than 50.
 // If userInput is greater than 50 the IF statement should run code that logs: 'More than 50!'
+const userInput = parseInt(prompt("Enter a whole number:"));
 
+if(userInput > 50){
+    console.log("More than 50!");
+}
 
 
 
@@ -108,7 +120,11 @@ console.log("PROBLEM 3");
 // (note that the userInput variable was declared in the previous problem)
 // If the condition is true, then log 'Equal to or more than 75!'.
 // If the condition is false, then log: 'Less than 75!'
-
+if (userInput >= 75){
+    console.log("Equal to or more than 75!");
+}else{
+    console.log("Less than 75!");
+}
 
 
 
@@ -121,7 +137,17 @@ console.log("PROBLEM 4");
 // If userInput is less than 10, then log: "Not yet a double digit!"
 // If userInput is less than or equal to 99, then log: "Almost a big number"
 // If userInput is greater than 99, then log: "Triple digits!"
-
+if(userInput < 0){
+    console.log("In the hole!");
+}else if(userInput === 0){
+    console.log("That's nothing!");
+}else if(userInput < 10){
+    console.log("Not yet a double digit!");
+}else if(userInput <= 99){
+    console.log("Almost a big number!");
+}else{
+    console.log("Triple digits!");
+}
 
 // Problem 5
 console.log("PROBLEM 5");
@@ -129,6 +155,15 @@ console.log("PROBLEM 5");
 // Then convert the temperature to fahrenheit.
 // If the fahrenheit temperature is less than or equal to 60 then log "Stay indoors!"
 // Otherwise, log "Go outside!"
+const celsius = parseFloat(prompt("Enter a temperature in Celsius:"));
+const fahrenheit = celsius * 9/5 + 32;
+
+if(fahrenheit <= 60){
+    console.log("Stay indoors!");
+}else{
+    console.log("Go outside!");
+}
+
 
 </script>
 	</main>
